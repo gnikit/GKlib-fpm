@@ -17,7 +17,7 @@ To use `GKlib` as a dependency in your `fpm` project, add the following to your 
 
 ```toml
 [dependencies]
-GKlib = { git="https://github.com/gnikit/GKlib.git" }
+gklib = { git="https://github.com/gnikit/GKlib.git" }
 ```
 
 ## License
