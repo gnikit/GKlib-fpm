@@ -1,0 +1,19 @@
+diff --git a/win32/adapt.c b/win32/adapt.c
+index 546857c..1330717 100644
+--- a/win32/adapt.c
++++ b/win32/adapt.c
+@@ -3,9 +3,14 @@
+ \brief Implementation of Win32 adaptation of libc functions
+ */
+ 
++/*
++ Changes Notice: This file includes alterations to the original GKlib code
++*/
++#if defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__NT__)
+ #include "adapt.h"
+ 
+ pid_t getpid(void)
+ {
+   return GetCurrentProcessId();
+ }
++#endif

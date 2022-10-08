@@ -1,0 +1,17 @@
+name = "gklib"
+version = "0.1.0"
+license = "license"
+author = "Giannis Nikiteas"
+maintainer = "gnikit@duck.com"
+copyright = "1995-2018, Regents of the University of Minnesota"
+
+[build]
+auto-executables = false
+auto-tests = false
+auto-examples = false
+
+[install]
+library = true
+
+[library]
+include-dir = ["src/GKlib"]
